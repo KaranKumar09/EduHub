@@ -1,0 +1,254 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('account.jpg');
+    margin: 0;
+    padding: 0;
+    background-color: #f7f4f4;
+}
+
+
+.form-container {
+    background-color: rgba(67, 109, 172, 0.8); /* Adjust the alpha value for transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    max-width: 400px; /* Optional: Limit width to prevent stretching on larger screens */
+    margin: 0 auto; /* Optional: Center the form horizontally */
+}
+
+/* Add any additional styling as needed */
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    color: #666;
+    text-align: center;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5C6BC0;
+    border: none;
+    color: white;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #5C6BC0;
+}
+
+/* Form container styles */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    transition: all 0.3s ease; /* Add transition for smooth changes */
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: all 0.3s ease; /* Add transition for smooth changes */
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Add transition for smooth changes */
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Navigation Styling */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Main Content Styling */
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}

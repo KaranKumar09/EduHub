@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url("background.png");
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        button[type="submit"], .logout-button, #deleteButton {
+            margin-top: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover, .logout-button:hover, #deleteButton:hover {
+            background-color: #45a049;
+        }
+        .logout-container {
+            text-align: center;
+            margin-top: 20px; /* Add margin-top */
+            margin-bottom: 20px; /* Add margin-bottom */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Welcome to your Account Page</h1>
+        <p>Here you can manage your account settings.</p>
+        <p>Name: <%= user.name %></p>
+        <p>Email: <%= user.email %></p>
+        
+        <!-- Update form -->
+        <form action="/account/update" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            
+            <button type="submit">Update</button>
+        </form>
+
+        <!-- Delete account form -->
+        <form id="deleteForm" action="/account/delete" method="POST">
+            <button type="button" id="deleteButton">Delete Account</button>
+        </form>
+    </div>
+    
+    <div class="logout-container">
+        <!-- Logout button -->
+        <form action="/logout" method="POST">
+            <button type="submit" class="logout-button">Logout</button>
+        </form>
+    </div>
+    
+    <script>
+        // Function to confirm deletion and submit the form
+        function deleteAccount() {
+            if (confirm("Are you sure you want to delete your account?")) {
+                document.getElementById("deleteForm").submit();
+            }
+        }
+
+        // Attach click event listener to the delete button
+        document.getElementById("deleteButton").addEventListener("click", deleteAccount);
+    </script>
+
+    <% if (req.query.passwordUpdated === 'true') { %>
+        <script>
+            // Function to show password update success message
+            function showPasswordUpdateMessage() {
+                alert("Password updated successfully. Kindly login again.");
+            }
+
+            // Call the function to show the message
+            showPasswordUpdateMessage();
+        </script>
+    <% } %>
+</body>
+</html>

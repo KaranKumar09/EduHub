@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+.form-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #472dbb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .submit-btn:hover {
+    background-color: #4565a0;
+  }
+
+  p {
+    margin-top: 15px;
+  }
+
+
+
+
+
+
+  body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-color: hwb(297 64% 9%);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+.form-container {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    /* background-color: #af4c57; */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.quote {
+    margin-left: 80px; /* Adjust distance from the form */
+    font-size: 30px;
+    color: #fff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('background.png');
+  background-size: cover;
+  background-color: hwb(297 64% 9%);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px; /* Adjust as needed */
+}
+
+.form-container {
+  width: 350px; /* Increased width */
+  background-color: rgba(40, 91, 52, 0.9); /* Transparent background */
+  padding: 30px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px; /* Increased margin */
+}
+
+label {
+  display: block;
+  font-size: 16px; /* Increased font size */
+  margin-bottom: 10px; /* Increased margin */
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  border-radius: 8px; /* Increased border radius */
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent background */
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  background-color: #472dbb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #4565a0;
+}
+
+.link {
+  color: #4CAF50;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.quote {
+  margin-left: 80px; /* Adjust distance from the form */
+  font-size: 30px;
+  color: #fff;
+}
