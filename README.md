@@ -1,5 +1,4 @@
-# EduHub
-Website link:https://eduhub-bjnn.onrender.com
+Website Link: https://eduhub-bjnn.onrender.com
 # EduHub - Your One-Stop Educational Resource Platform
 EduHub is an all-in-one educational platform designed to provide students with essential academic and financial resources in one convenient place. Whether you are looking for scholarship opportunities, loan information, mid-day meal programs, or course details, EduHub has got you covered.
 ## Features
