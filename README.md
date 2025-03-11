@@ -33,7 +33,7 @@ EduHub is an all-in-one educational platform designed to provide students with e
 EduHub welcomes contributions from educators, students, and developers to improve the platform. If you want to contribute, submit suggestions or report issues through the contact section.
 ## Contact
 For any queries or support, reach out to us at:
-- **Email**: support@eduhub.com
+- **Email**: karan9955078@gmail.com
 EduHub - Empowering Students, Simplifying Education!
 
 
